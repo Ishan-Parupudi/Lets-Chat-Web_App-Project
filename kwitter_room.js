@@ -23,6 +23,9 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       });});}
       function logout1()
       {
+            localStorage.removeItem("user_name");
+            localStorage.removeItem("password");
+            
             window.location="index.html";
       }
 getData();
